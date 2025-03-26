@@ -1,6 +1,6 @@
 import streamlit as st
-import pickle
-import requests
+# import pickle
+# import requests
 
 #movies = pickle.load(open('movies.pkl','rb'))
 #similarity = pickle.load(open('similarity.pkl','rb'))
