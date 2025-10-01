@@ -1,5 +1,6 @@
 import streamlit as st
-import pickle,joblib
+import pickle
+import joblib
 import requests
 
 movies = pickle.load(open('movies.pkl','rb'))
@@ -59,6 +60,7 @@ if st.button('Recommend'):
         st.write(names[4])
         st.image(posters[4])
     
+
 
 
 
