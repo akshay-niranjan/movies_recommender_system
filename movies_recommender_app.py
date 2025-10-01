@@ -24,7 +24,7 @@ def recommend(movie):
 
         recommended_movies.append(movies.iloc[i[0]].title)
 
-        fetch poster through api
+        #fetch poster through api
         recommended_movies_posters.append(fetch_posters(movie_id))
 
     return recommended_movies,recommended_movies_posters
@@ -58,6 +58,7 @@ if st.button('Recommend'):
         st.header(names[4])
         st.image(posters[4])
     
+
 
 
 
