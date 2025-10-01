@@ -1,9 +1,9 @@
 import streamlit as st
-import pickle
+import pickle,joblib
 import requests
 
 movies = pickle.load(open('movies.pkl','rb'))
-similarity = pickle.load(open('similarity2.pkl','rb'))
+similarity = joblib.load("data.pkl")
 
 movies_title = movies['title'].values
 
@@ -59,6 +59,7 @@ if st.button('Recommend'):
         st.write(names[4])
         st.image(posters[4])
     
+
 
 
 
