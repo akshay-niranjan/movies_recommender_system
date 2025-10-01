@@ -38,8 +38,8 @@ selected_movie_name = st.selectbox(
 
 if st.button('Recommend'):
     names = recommend(selected_movie_name)
-   for i in recommendations:
-     st.write(i)
+    for i in recommendations:
+        st.write(i)
 
     col1,col2,col3,col4,col5=st.columns(5)
     with col1:
@@ -58,4 +58,5 @@ if st.button('Recommend'):
         st.header(names[4])
        # st.image(posters[4])
     
+
 
