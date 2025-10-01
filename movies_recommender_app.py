@@ -4,7 +4,7 @@ import joblib
 import requests
 
 movies = pickle.load(open('movies.pkl','rb'))
-similarity = joblib.load("data.pkl")
+similarity = joblib.load("similarity2.pkl")
 
 movies_title = movies['title'].values
 
@@ -60,6 +60,7 @@ if st.button('Recommend'):
         st.write(names[4])
         st.image(posters[4])
     
+
 
 
 
